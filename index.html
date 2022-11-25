@@ -1,0 +1,120 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded Sign-up for Bridgement Partners</title>
+    <meta name="description" content="Embedded Sign-up for Bridgement Partners">
+    <meta name="author" content="Bridgement">
+    <link rel="stylesheet" href="style.css?">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Open+Sans:ital,wght@0,400;0,700;1,600&display=swap"
+        rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+        integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+
+<body>
+    <div class="navbar clear nav-top">
+        <div class="row content">
+            <a href="#"><img class="logo" src="logo.svg"></a>
+            <a class="right" href="mailto:dev-support@bridgement.com" target="_blank"><i
+                    class="fas fa-paper-plane"></i>&nbsp;
+                dev-support@bridgement.com</a>
+        </div>
+    </div>
+
+    <div class="container clear">
+        <div class="row wrapper">
+
+            <div class="sidepanel">
+                <div class="divider left"></div>
+
+                <a class="section" href="#overview">Overview</a>
+                <a class="section" href="#basic">Basic Installation</a>
+                <a class="section" href="#init">Initiating a sign-up</a>
+                <a class="section" href="#domain">Domain Registration</a>
+                <a class="section" href="#example">Example Usage</a>
+
+                <div class="divider left"></div>
+
+            </div>
+
+            <div class="right-col">
+                <h1>Embedded Sign-up for Bridgement Partners</h1>
+
+                <div id="overview" style="display: block; position: relative; top: -100px; visibility: hidden;"></div>
+
+                <h2>Overview</h2>
+                <p>Bridgement has the ability for partners to use their sign-up process embedded in their
+                    own website.
+                    All that is required is for the partner to use a javascript file created by Bridgement and input a
+                    reference for the partner.</p>
+
+                <div id="basic" style="display: block; position: relative; top: -100px; visibility: hidden;"></div>
+
+                <h2>Basic Installation</h2>
+                <p>Copy and paste the following snippet on every page you want to allow the embedded sign-up
+                    on.</p>
+                <pre>
+<code class="language-html">&lt;script src="https://integration.bridgement.com/embedded-sign-up/v1/index.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+    embeddedSignUp.settings = { clientReference: "your-companies-reference" };
+&lt;/script&gt;
+</code>
+                </pre>
+
+                <div id="init" style="display: block; position: relative; top: -100px; visibility: hidden;"></div>
+
+                <h2>Initiating a sign-up</h2>
+                <p>Use the following snippet to initiate the sign-up process. This should create an inline
+                    frame in the partner’s window, where the user will be able to sign-up to Bridgement from the
+                    partner’s website.</p>
+                <pre>
+<code class="language-js">embeddedSignUp.signup();</code>
+                </pre>
+
+                <div id="domain" style="display: block; position: relative; top: -100px; visibility: hidden;"></div>
+
+                <h2>Domain Registration</h2>
+                <p>In order to enable the embedded sign-up on the partner’s website, the domain must first
+                    be registered on Bridgement’s backend. Please contact Bridgement and exchange the domain(s) for
+                    which the partner wishes to enable the embedded sign-up. E.g www.example.com</p>
+
+                <div id="example" style="display: block; position: relative; top: -100px; visibility: hidden;"></div>
+
+                <h2>Example Usage</h2>
+                <p>The following is an example of a button that will initiate the embedded sign-up process
+                    when a button is pressed.</p>
+                <pre>
+<code class="language-js">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt; &lt;/head&gt;
+    &lt;body&gt;
+        &lt;button onclick="bridgementSignUp()"&gt;Pay Now&lt;/button&gt;
+    &lt;/body&gt;
+    &lt;script src="https://integration.bridgement.com/embedded-sign-up/v1/index.js"&gt;&lt;/script&gt;
+    &lt;script&gt;
+        embeddedSignUp.settings = {
+            clientReference: "your-companies-reference"
+        };
+        
+        function bridgementSignUp() {
+            embeddedSignUp.signup();
+        }
+    &lt;/script&gt;
+&lt;/html&gt;
+</code>
+                </pre>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
