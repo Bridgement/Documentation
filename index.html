@@ -15,9 +15,10 @@
     <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
         integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+    <script src="https://unpkg.com/highlightjs-copy/dist/highlightjs-copy.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/highlightjs-copy/dist/highlightjs-copy.min.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/dark.min.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
-    <script>hljs.highlightAll();</script>
 </head>
 
 <body>
@@ -118,5 +119,9 @@
     </div>
     <small style="float: right; margin: 20px">Updated: <time datetime="2022-11-30">30/11/2022</time></small>
 </body>
+<script>
+    hljs.addPlugin(new CopyButtonPlugin());
+    hljs.highlightAll();
+</script>
 
 </html>
