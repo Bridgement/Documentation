@@ -12,6 +12,7 @@ body {
 
 h1 {
     font-family: 'Noto Serif', serif;
+    color: #010844;
     font-size: 39px;
     line-height: 42px;
     margin-bottom: 50px;
@@ -23,7 +24,7 @@ h2 {
     font-size: 28px;
     line-height: 30px;
     text-align: center;
-    color: #333;
+    color: #010844;
     margin-block-start: 40px;
     margin-block-end: 30px;
     margin-inline-start: 0px;
@@ -45,8 +46,8 @@ a:hover {
 
 .navbar {
     overflow: hidden;
-    background-color: #0098f1;
-    color: #333;
+    background-color: #D20C54;
+    color: #010844;
     top: 0;
     width: 100%;
     height: 70px;
@@ -59,7 +60,7 @@ a:hover {
 
 .navbar a {
     margin-right: 40px;
-    color: #333;
+    color: #010844;
 }
 
 .navbar a:active {
@@ -75,7 +76,7 @@ a:hover {
 }
 
 .top {
-    background-color: #0098f1;
+    background-color: #D20C54;
     height: 650px;
 }
 
@@ -85,7 +86,7 @@ a:hover {
 }
 
 .nav-top {
-    border-top: 8px solid #0098f1;
+    border-top: 8px solid #D20C54;
 }
 
 .row {
@@ -119,7 +120,7 @@ a:hover {
     font-weight: 600;
     text-align: left;
     text-decoration: none;
-    color: #333;
+    color: #010844;
     display: block;
     padding-bottom: 12px;
 }
@@ -131,7 +132,7 @@ a:hover {
     line-height: 30px;
     display: block;
     text-decoration: none;
-    color: #333;
+    color: #010844;
 }
 
 .sidepanel a.sub-section {
@@ -141,7 +142,7 @@ a:hover {
     line-height: 25px;
     display: block;
     text-decoration: none;
-    color: #333;
+    color: #010844;
     padding-left: 20px;
 
 }
@@ -193,7 +194,7 @@ a:hover {
 }
 
 .right-col a {
-    color: #0098f1;
+    color: #D20C54;
     text-decoration: underline;
 }
 
@@ -222,7 +223,7 @@ a:hover {
 .divider {
     width: 40px;
     height: 4px;
-    background: #0098f1;
+    background: #00C3F0;
     border-radius: 30px;
     margin: auto;
     margin-top: 8px;
@@ -244,7 +245,7 @@ a:hover {
 }
 
 .footer a {
-    color: #333;
+    color: #010844;
 }
 
 .resp-break {
